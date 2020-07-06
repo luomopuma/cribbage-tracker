@@ -51,6 +51,8 @@ export default function Contact() {
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        {/*TODO: wire up handleChanges*/}
+        {/*TODO: wire up handleAttachment*/}
         <input type="hidden" name="form-name" value="file-upload" />
         <p hidden>
           <label>
@@ -58,17 +60,62 @@ export default function Contact() {
           </label>
         </p>
         <p>
-          <label>
-            Your name:
-            <br />
-            <input type="text" name="name" onChange={handleChange} />
+          <label htmlFor={"gameDate"}>
+            Game Date:
+            <input type="date" name={"gameDate"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor={"player1Name"}>
+            Player 1:
+            <input type="text" name="player1Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player1Score"}>
+            Player 1 Score:
+            <input type="number" name="player1Score" min={"0"} max={ "121"} step={"1"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor={"player2Name"}>
+            Player 2:
+            <input type="text" name="player1Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player2Score"}>
+            Player 2 Score:
+            <input type="number" name="player2Score" min={"0"} max={ "121"} step={"1"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor={"player3Name"}>
+            Player 3:
+            <input type="text" name="player1Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player3Score"}>
+            Player 3 Score:
+            <input type="number" name="player3Score" min={"0"} max={ "121"} step={"1"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor={"player4Name"}>
+            Player 4:
+            <input type="text" name="player4Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player4Score"}>
+            Player 4 Score:
+            <input type="number" name="player4Score" min={"0"} max={ "121"} step={"1"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor="gameNotes">
+            Notes
+            <br/>
+            <input type="textarea" name={"gameNotes"}/>
           </label>
         </p>
         <p>
           <label>
-            File:
-            <br />
-            <input type="file" name="attachment" onChange={handleAttachment} />
+            Photo:
+            <input type="file" accept={"image/*, .pdf"} name="attachment" onChange={handleAttachment} />
           </label>
         </p>
         <p>
