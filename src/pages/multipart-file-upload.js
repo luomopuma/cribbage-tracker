@@ -43,7 +43,7 @@ export default function Contact() {
         File Upload using <code>multipart/form-data</code>
       </h1>
       <form
-        name="file-upload"
+        name="cribbage-form"
         method="post"
         action="/thanks/"
         data-netlify="true"
@@ -53,7 +53,7 @@ export default function Contact() {
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         {/*TODO: wire up handleChanges*/}
         {/*TODO: wire up handleAttachment*/}
-        <input type="hidden" name="form-name" value="file-upload" />
+        <input type="hidden" name="form-name" value="cribbage-form" />
         <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
