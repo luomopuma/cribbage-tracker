@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <Layout>
       <h1>
-        File Upload using <code>multipart/form-data</code>
+        Log game.
       </h1>
       <form
         name="cribbage-form"
@@ -57,6 +57,12 @@ export default function Contact() {
           <label htmlFor={"gameDate"}>
             Game Date:
             <input type="date" name={"gameDate"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor="gameLocation">
+            Location:
+            <input type="text" name={"gameLocation"}/>
           </label>
         </p>
         <p>
@@ -115,7 +121,6 @@ export default function Contact() {
         <p>
           <button type="submit">Send</button>
         </p>
-        <p>Note: multiple file uploads are not supported by Netlify at this time.</p>
       </form>
     </Layout>
   )

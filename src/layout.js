@@ -9,8 +9,8 @@ export default function Template({ children }) {
   return (
     <div>
       <Helmet
-        title="Gatsby Default Starter"
-        meta={[{ name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' }]}
+        title="Cribbage."
+        meta={[{ name: 'description', content: 'Cribbage.' }, { name: 'keywords', content: 'cribbage, tracker' }]}
       />
       <div
         style={{
@@ -33,7 +33,7 @@ export default function Template({ children }) {
                 textDecoration: 'none',
               }}
             >
-              Gatsby + Netlify Forms
+              Cribbage.
             </Link>
           </h1>
         </div>
