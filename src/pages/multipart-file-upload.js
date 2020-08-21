@@ -89,7 +89,7 @@ export default function Contact() {
         <p>
           <label htmlFor={"player3Name"}>
             Player 3:
-            <input type="text" name="player1Name" onChange={handleChange} />
+            <input type="text" name="player3Name" onChange={handleChange} />
           </label>
           <label htmlFor={"player3Score"}>
             Player 3 Score:
