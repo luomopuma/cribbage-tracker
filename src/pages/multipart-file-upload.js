@@ -79,7 +79,7 @@ export default function Contact() {
         <p>
           <label htmlFor={"player2Name"}>
             Player 2:
-            <input type="text" name="player1Name" onChange={handleChange} />
+            <input type="text" name="player2Name" onChange={handleChange} />
           </label>
           <label htmlFor={"player2Score"}>
             Player 2 Score:
@@ -114,7 +114,7 @@ export default function Contact() {
           </label>
         </p>
         <p>
-          <label>
+          <label htmlFor={"attachment"}>
             Photo:
             <input type="file" accept={"image/*, .pdf"} name="attachment" onChange={handleAttachment} />
           </label>
