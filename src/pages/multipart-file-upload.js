@@ -47,12 +47,10 @@ export default function Contact() {
         method="post"
         action="/thanks/"
         data-netlify="true"
-        data-netlify-honeypot={"bot-field"}
+        data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        {/*TODO: wire up handleChanges*/}
-        {/*TODO: wire up handleAttachment*/}
         <input type="hidden" name="form-name" value="cribbage-form" />
         <p hidden>
           <label>
