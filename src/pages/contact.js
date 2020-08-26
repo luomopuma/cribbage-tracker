@@ -15,6 +15,10 @@ export default function Contact() {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
+  const handleAttachment = (e) => {
+    setState({ ...state, [e.target.name]: e.target.files[0] })
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
@@ -32,7 +36,7 @@ export default function Contact() {
 
   return (
     <Layout>
-      <h1>Contact</h1>
+      <h1>hey</h1>
       <form
         name="contact"
         method="post"

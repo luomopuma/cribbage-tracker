@@ -54,6 +54,11 @@ export default function Contact() {
         {/*TODO: wire up handleChanges*/}
         {/*TODO: wire up handleAttachment*/}
         <input type="hidden" name="form-name" value="cribbage-form" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
         <p>
           <label htmlFor={"gameDate"}>
             Game Date:
