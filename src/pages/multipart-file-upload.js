@@ -43,7 +43,7 @@ export default function Contact() {
         Log game.
       </h1>
       <form
-        name="cribbage-form"
+        name="cribbage-form-archive"
         method="post"
         action="/thanks/"
         data-netlify="true"
@@ -51,7 +51,7 @@ export default function Contact() {
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="cribbage-form" />
+        <input type="hidden" name="form-name" value="cribbage-form-archive" />
         <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
