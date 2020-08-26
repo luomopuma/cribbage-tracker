@@ -75,17 +75,40 @@ export default function Contact() {
           </label>
         </p>
         <p>
-          <label>
-            Your email:
-            <br />
-            <input type="email" name="email" onChange={handleChange} />
+          <label htmlFor={"player2Name"}>
+            Player 2:
+            <input type="text" name="player2Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player2Score"}>
+            Player 2 Score:
+            <input type="number" name="player2Score" min={"0"} max={ "121"} step={"1"}/>
           </label>
         </p>
         <p>
-          <label>
-            Message:
-            <br />
-            <textarea name="message" onChange={handleChange} />
+          <label htmlFor={"player3Name"}>
+            Player 3:
+            <input type="text" name="player3Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player3Score"}>
+            Player 3 Score:
+            <input type="number" name="player3Score" min={"0"} max={ "121"} step={"1"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor={"player4Name"}>
+            Player 4:
+            <input type="text" name="player4Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player4Score"}>
+            Player 4 Score:
+            <input type="number" name="player4Score" min={"0"} max={ "121"} step={"1"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor="gameNotes">
+            Notes
+            <br/>
+            <input type="textarea" name={"gameNotes"}/>
           </label>
         </p>
         <p>
