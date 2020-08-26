@@ -53,10 +53,25 @@ export default function Contact() {
           </label>
         </p>
         <p>
-          <label>
-            Your name:
-            <br />
-            <input type="text" name="name" onChange={handleChange} />
+          <label htmlFor={"gameDate"}>
+            Game Date:
+            <input type="date" name={"gameDate"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor="gameLocation">
+            Location:
+            <input type="text" name={"gameLocation"}/>
+          </label>
+        </p>
+        <p>
+          <label htmlFor={"player1Name"}>
+            Player 1:
+            <input type="text" name="player1Name" onChange={handleChange} />
+          </label>
+          <label htmlFor={"player1Score"}>
+            Player 1 Score:
+            <input type="number" name="player1Score" min={"0"} max={ "121"} step={"1"}/>
           </label>
         </p>
         <p>
